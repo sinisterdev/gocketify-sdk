@@ -1,4 +1,4 @@
-module gocketify-sdk
+module github.com/sinisterdev/gocketify-sdk
 
 go 1.22.7
 
