@@ -34,5 +34,3 @@ require (
 	golang.org/x/exp v0.0.0-20230713183714-613f0c0eb8a1 // indirect
 	golang.org/x/sys v0.29.0 // indirect
 )
-
-replace github.com/maldikhan/go.socket.io => github.com/maldikhan/go.socket.io v0.0.4
