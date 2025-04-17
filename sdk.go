@@ -1,4 +1,4 @@
-package main
+package rocketify
 
 import (
 	"bytes"
@@ -549,25 +549,4 @@ func (s *SDK) debugLog(message string, v ...interface{}) {
 	} else {
 		log.Printf("[Rocketify DEBUG] %s", message)
 	}
-}
-
-func main() {
-	// Example usage
-	sdk := New()
-	opts := Options{
-		APIKey: "your_api_key",
-		Debug:  true,
-	}
-
-	if _, err := sdk.Init(opts); err != nil {
-		log.Fatal(err)
-	}
-
-	defer sdk.Close()
-
-	sdk.Log("Hello, Rocketify!", LogTypeInfo)
-	sdk.Notify(GenericNotification{
-		Title:   "Test Notification",
-		Message: "This is a test notification.",
-	})
 }
