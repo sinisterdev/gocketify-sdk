@@ -134,7 +134,7 @@ func (s *SDK) Init(opts Options) (interface{}, error) {
 	var settingsErr, storageErr error
 
 	var wg sync.WaitGroup
-	wg.Add(2)
+	wg.Add(1)
 
 	go func() {
 		defer wg.Done()
